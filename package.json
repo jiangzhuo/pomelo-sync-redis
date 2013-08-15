@@ -1,0 +1,7 @@
+{
+  "name": "pomelo-sync-redis", 
+  "version": "0.0.1",
+  "dependencies": {
+      "redis":"*"
+  }
+}
