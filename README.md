@@ -34,7 +34,7 @@ npm install pomelo-sync-redis
 var opt = opt || {};
 
 var updateUser = function(dbclient,val) {
-    console.log('mock save %j',val);
+    console.info('mock save %j',val);
 }
 
 var dbclient = {};//db connection etc;
