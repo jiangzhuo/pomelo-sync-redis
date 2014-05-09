@@ -17,7 +17,7 @@ Data sync features include timer sync,set,get,mset,mget,hset,hget,incr,decr,flus
 ##Differenc from pomelo-sync
 pomelo-sync-redis is modified from pomelo-sync, there are serveral differences:  
 1. pomelo-sync use javascript object to merger data, pomelo-sync-redis use a hash in redis to merger data.  
-2. pomelo-sync-redis use a self implement queue to store flush data, pomelo-sync-redis use a set in redis to store flush data.  
+2. pomelo-sync use a self implement queue to store flush data, pomelo-sync-redis use a set in redis to store flush data.  
 3. every pomelo-sync instace will execute sync job, pomelo-sync-redis can set which instance to execute sync job. and every instace can add job, which is like pomelo-sync.  
 4. each pomelo-sync instance will not share data with other, pomelo-sync-redis can share and merger data through redis.  
 5. pomelo-sync-redis can flush a part of data in mergerMap immediately. (through flushByUid method)
